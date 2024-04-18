@@ -5,17 +5,54 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <div class="snow-container">
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <!-- Add more snowflakes as needed -->
+<body class="snow">
+    <div class="center">
+        <h1>Viking Interactive Info Page</h1>
+        <hr/>
     </div>
-
+    
 
     
-    <div>
-        <img>
+    
+    <div class="center">
+        <div class="grid-container">
+            <div><h2 class="grid-item">The Viking Long Ship</h2></div>
+            <div><p class="grid-item info-block-1">
+            Usage and exploration were central to the role of Viking boats in the medieval era. Primarily, these vessels, 
+            such as longships and knarrs, served as versatile tools for raiding, trade, and exploration across the vast expanse 
+            of the North Sea and beyond. Longships, sleek and swift, were the epitome of Viking naval prowess, designed for 
+            lightning-fast strikes along coastal settlements, enabling the Vikings to swiftly navigate shallow rivers and reach 
+            far-off lands. On the other hand, knarrs, sturdier and broader, facilitated extensive trade networks, carrying goods 
+            and resources to and from distant shores, opening up avenues for commerce and cultural exchange. Both types of vessels 
+            played a pivotal role in the Viking Age, enabling the Norse people to leave an indelible mark on history through their 
+            maritime exploits and voyages of discovery.</p></div>
+        </div>
+        
+
+        
+        
+        <!--First Image and Map-->
+        <div>
+            <img src="assets/images/vikingShip.jpg" usemap="#map-boat" id="image-boat">
+            <map name="map-boat" id="map-boat">
+                <area shape="rect" coords="402,254,490,340" alt="Sail" data-info="Information for Area 1">
+                <area shape="rect" coords="560,510,595,575" alt="Mast" data-info="Information for Area 1">
+                <area shape="rect" coords="655,525,765,570" alt="Crew" data-info="Information for Area 1">
+                <area shape="rect" coords="480,595,575,650" alt="Sheilds" data-info="Information for Area 1">
+                <area shape="rect" coords="785,610,875,660" alt="Hull" data-info="Information for Area 1">
+                <area shape="rect" coords="265,660,435,710" alt="Ores" data-info="Information for Area 1">
+            </map>
+        </div>
+        <div class="info-box-boat" id="info-box-boat"></div>
     </div>
+
+
+    <script src="assets/scripts/script.js"></script>
+
+    <footer class="center">
+        <hr/>
+        <br/>
+        <p>Created By Ryan McIntosh</p>
+        <p>University of Canberra</p>
+    </footer>
 </body>

@@ -1,51 +1,35 @@
 html{
-    font-family:'Courier New', Courier, monospace;
+    margin: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightslategrey;
 }
 
-body {
+body{
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrollbars */
 }
 
-.snow-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+footer{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
-.snowflake {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-    pointer-events: none; /* Snowflakes should not interfere with user interactions */
-    animation: snowfall linear infinite;
+.center{
+    text-align: center;
 }
 
-@keyframes snowfall {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
+.info-block-1 {
+    background-color: lightgrey;
+    padding: 1rem;
+    border: 1px solid grey;
 }
 
-/* Additional styling for a festive look */
-body {
-    background-color: #003366; /* Dark blue background */
+.grid-container{
+    display: inline-grid;
+    column-gap: 50px;
+    grid-template-columns: 40% 40%;
 }
 
-.snowflake:nth-child(2) {
-    width: 7px;
-    height: 7px;
-}
-
-.snowflake:nth-child(3) {
-    width: 10px;
-    height: 10px;
+.grid-item{
+    
 }
