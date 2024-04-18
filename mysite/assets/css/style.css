@@ -1,0 +1,51 @@
+html{
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.snowflake {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none; /* Snowflakes should not interfere with user interactions */
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Additional styling for a festive look */
+body {
+    background-color: #003366; /* Dark blue background */
+}
+
+.snowflake:nth-child(2) {
+    width: 7px;
+    height: 7px;
+}
+
+.snowflake:nth-child(3) {
+    width: 10px;
+    height: 10px;
+}
