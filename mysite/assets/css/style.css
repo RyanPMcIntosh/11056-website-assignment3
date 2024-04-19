@@ -1,7 +1,6 @@
 html{
-    margin: 2rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: lightslategrey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(36, 36, 49);
 }
 
 body{
@@ -14,22 +13,67 @@ footer{
     margin-bottom: 3rem;
 }
 
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 20px;
+}
+
+.secondary-background{
+    background-color: azure;
+}
+
 .center{
     text-align: center;
 }
 
+.font-1{
+    color:azure;
+}
+
+.font-2{
+    color:black;
+}
+
+.py-5{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.my-5{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.mx-5 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .info-block-1 {
-    background-color: lightgrey;
-    padding: 1rem;
-    border: 1px solid grey;
-}
-
-.grid-container{
     display: inline-grid;
-    column-gap: 50px;
-    grid-template-columns: 40% 40%;
+    column-gap: 30px;
+    grid-template-columns: 20% 75%;
+    background-color: rgb(172, 172, 172);
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid black;
+    width: 75%;
 }
 
-.grid-item{
-    
+.info-block-1-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px black solid;
 }
+
+.info-box-boat{
+    font-size: 20px;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border: 1px solid black;
+}
+
