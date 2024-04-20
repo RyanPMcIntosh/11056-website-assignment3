@@ -36,7 +36,14 @@ p{
 .m-5{
     margin: 2rem;
 }
-
+.parallax{
+    background-image: url("../images/parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 
 /*Light mode (default)*/
 body{
@@ -47,7 +54,7 @@ body{
 }
 
 .secondary-background{
-    background-color: rgb(223, 223, 223);
+    background: rgba(223, 223, 223, 0.5);
 }
 
 .info-block-1 {
@@ -93,7 +100,7 @@ body.dark-mode{
 }
 
 .dark-mode .secondary-background{
-    background-color: rgb(43, 47, 56);
+    background: rgba(43, 47, 56, 0.5);
 }
 
 .dark-mode .info-block-1{
