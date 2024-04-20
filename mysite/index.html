@@ -6,7 +6,10 @@
 </head>
 
 <body>
+    <!--dark mode toggle button-->
     <div class="m-5"><button class="dark-button" onclick="darkToggle()">Toggle dark mode</button></div>
+    
+    <!--heading-->
     <div class="center py-5 mx-5">
         <h1>Viking Interactive Info Page</h1>
         <hr/>
@@ -15,7 +18,7 @@
     
 
     
-    
+    <!--info box-->
     <div class="center secondary-background py-20">
         <div class="info-block-1 py-5">
             <h2 class="info-block-1-title">The Viking Longship</h2>
@@ -34,7 +37,7 @@
 
         
         
-        <!--Image and Map-->
+    <!--Clickable Image-->
     <div class="center py-20">
         <img src="assets/images/vikingShip.jpg" usemap="#map-boat" id="image-boat" class="my-5">
         <map name="map-boat" id="map-boat">
@@ -132,11 +135,13 @@
                     rhythmic strokes of oarsmen or the billowing sails catching the wind, Viking boats epitomized the ingenuity and 
                     adaptability of their seafaring culture, shaping the course of history through their maritime exploits.">
             </map>
+        <!--Where the information gets displayed-->
         <div class="info-box-boat" id="info-box-boat">Select a white box above.</div>
         <br/>
         <br/>
     </div>
 
+    <!--Slideshow-->
     <div class="secondary-background py-20">
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -152,15 +157,17 @@
                 <img src="assets/images/gods.jpg">
             </div>
 
+            <!--Arrow buttons to switch slide-->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 
-
+    <!--Calling the scripts-->
     <script src="assets/scripts/shipClickables.js"></script>
     <script src="assets/scripts/darkMode.js"></script>
     <script src="assets/scripts/slideShow.js"></script>
+
 
     <footer class="center">
         <p>Authored By Ryan McIntosh</p>
