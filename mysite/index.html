@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="snow">
-    <div class="center py-5 mx-5 font-1">
+<body>
+    <div class="m-5"><button class="dark-button" onclick="darkToggle()">Toggle dark mode</button></div>
+    <div class="center py-5 mx-5">
         <h1>Viking Interactive Info Page</h1>
         <hr/>
         <h3>By Ryan McIntosh</h3>
@@ -15,7 +16,7 @@
 
     
     
-    <div class="center secondary-background">
+    <div class="center secondary-background py-20">
         <div class="info-block-1 py-5">
             <h2 class="info-block-1-title">The Viking Longship</h2>
             <p>
@@ -28,15 +29,16 @@
             played a pivotal role in the Viking Age, enabling the Norse people to leave an indelible mark on history through their 
             maritime exploits and voyages of discovery.</p>
         </div>
+    </div>
         
 
         
         
-        <!--First Image and Map-->
-        <div>
-            <img src="assets/images/vikingShip.jpg" usemap="#map-boat" id="image-boat" class="my-5">
-            <map name="map-boat" id="map-boat">
-                <area shape="rect" coords="402,254,490,340" alt="Sail" data-info="
+        <!--Image and Map-->
+    <div class="center py-20">
+        <img src="assets/images/vikingShip.jpg" usemap="#map-boat" id="image-boat" class="my-5">
+        <map name="map-boat" id="map-boat">
+            <area shape="rect" coords="402,254,490,340" alt="Sail" data-info="
                     Sails and rigging were fundamental components of Viking boats, enabling these vessels to harness the power of 
                     the wind and navigate the expansive waters with remarkable agility and efficiency. At the heart of their
                     propulsion system was the square sail, meticulously crafted from durable materials such as wool or linen. 
@@ -50,7 +52,7 @@
                     daring raids or undertaking arduous voyages of exploration, the sails and rigging of Viking boats were 
                     indispensable tools that propelled the Norse people to the forefront of maritime innovation and adventure.">
                 
-                <area shape="rect" coords="560,510,595,575" alt="Mast" data-info="
+            <area shape="rect" coords="560,510,595,575" alt="Mast" data-info="
                     Navigation and steering were vital skills aboard Viking boats, essential for guiding these vessels through 
                     the perilous waters of the North Sea and beyond. At the heart of the navigation system was the adept use 
                     of celestial cues, with the sun, stars, and landmarks serving as invaluable guides for charting courses 
@@ -66,7 +68,7 @@
                     homelands, exploring new territories and establishing far-reaching trade networks that would leave an 
                     enduring legacy on the world's maritime history.">
                 
-                <area shape="rect" coords="655,525,765,570" alt="Crew" data-info="
+            <area shape="rect" coords="655,525,765,570" alt="Crew" data-info="
                     Crew dynamics were paramount aboard Viking boats, reflecting a complex social structure that extended 
                     beyond mere seafaring expertise. Typically consisting of 30 to 50 individuals, the crew encompassed a 
                     diverse array of roles and responsibilities. At the helm stood the captain or chieftain, whose leadership 
@@ -81,7 +83,7 @@
                     navigating not only the physical realms of the ocean but also the intricate tapestry of social hierarchies 
                     and interpersonal relationships aboard their iconic vessels.">
 
-                <area shape="rect" coords="480,595,575,650" alt="Sheilds" data-info="
+            <area shape="rect" coords="480,595,575,650" alt="Sheilds" data-info="
                     Combat capabilities were integral to Viking boats, as these vessels not only served as means of transportation 
                     but also as platforms for raids and warfare. Equipped with an array of weaponry and designed for swift, 
                     decisive strikes, Viking boats were formidable adversaries on the open seas and along coastal settlements. 
@@ -96,7 +98,7 @@
                     lightning-fast raids and establish dominance over vast stretches of coastline, leaving a lasting imprint on 
                     the annals of naval history.">
 
-                <area shape="rect" coords="785,610,875,660" alt="Hull" data-info="
+            <area shape="rect" coords="785,610,875,660" alt="Hull" data-info="
                     Construction was a meticulous process for Viking boats, with each vessel crafted to exacting standards using 
                     traditional techniques and materials sourced from the surrounding landscape. Oak wood, known for its 
                     durability and resilience, was the primary material used in shipbuilding, providing the structural framework 
@@ -110,7 +112,7 @@
                     settlements. With their sturdy construction and versatile design, Viking boats were well-suited to the demands 
                     of maritime exploration, trade, and warfare, embodying the ingenuity and craftsmanship of the Norse people.">
                 
-                <area shape="rect" coords="265,660,435,710" alt="Ores" data-info="
+            <area shape="rect" coords="265,660,435,710" alt="Ores" data-info="
                     Propulsion methods were essential to the functionality of Viking boats, allowing these vessels to traverse the vast 
                     expanses of the ocean and navigate through intricate waterways with relative ease. The primary means of propulsion were 
                     rowing and sailing, each offering distinct advantages depending on the prevailing conditions and the specific 
@@ -130,17 +132,38 @@
                     rhythmic strokes of oarsmen or the billowing sails catching the wind, Viking boats epitomized the ingenuity and 
                     adaptability of their seafaring culture, shaping the course of history through their maritime exploits.">
             </map>
+        <div class="info-box-boat" id="info-box-boat">Select a white box above.</div>
+        <br/>
+        <br/>
+    </div>
+
+    <div class="secondary-background py-20">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/images/helmets.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/house.webp">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/swords.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/images/gods.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="info-box-boat" id="info-box-boat">Click on one of the white boxes above.</div>
     </div>
 
 
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/shipClickables.js"></script>
+    <script src="assets/scripts/darkMode.js"></script>
+    <script src="assets/scripts/slideShow.js"></script>
 
-    <footer class="center font-1">
-        <hr/>
-        <br/>
-        <p>Created By Ryan McIntosh</p>
-        <p>University of Canberra</p>
+    <footer class="center">
+        <p>Authored By Ryan McIntosh</p>
+        <p>&copy; 2024 University of Canberra</p>
     </footer>
 </body>

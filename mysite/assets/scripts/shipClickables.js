@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('image-boat').addEventListener('click', function(event) {
       // Hide info box if clicked outside of area
       if (event.target.tagName !== 'AREA') {
-        infoBox.style.display = 'none';
+        infoBox.textContent = "Select a white box above.";
+        infoBox.style.display = 'block';
       }
     });
   });
